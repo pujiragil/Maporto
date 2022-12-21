@@ -29,6 +29,9 @@ module.exports = {
           "dark": "#171F26",
           "light": "#FFFFFF"
         }
+      },
+      fontSize: {
+        "head": "32px"
       }
     },
   },
