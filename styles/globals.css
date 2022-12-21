@@ -9,3 +9,7 @@
 .avatar:hover {
   filter: drop-shadow(0 0 10px #FFE071);
 }
+
+.icons{
+  @apply text-primary-two dark:text-secondary-two hover:text-primary-one hover:dark:text-secondary-one cursor-pointer
+}
