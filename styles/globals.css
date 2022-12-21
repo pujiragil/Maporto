@@ -7,7 +7,7 @@
 }
 
 .avatar:hover {
-  filter: drop-shadow(0 0 10px #FFE071);
+  filter: drop-shadow(0 0 20px #FFE071);
 }
 
 .icons{
