@@ -5,3 +5,7 @@
 * {
   font-family: inherit;
 }
+
+.avatar:hover {
+  filter: drop-shadow(0 0 10px #FFE071);
+}

@@ -1,5 +1,10 @@
+import Layout from "../components/Layout";
+import Profile from "../components/Profile";
+
 export default function Home() {
   return (
-    <h1 className="text-secondary-one">makan bang</h1>
+    <Layout>
+      <Profile/>
+    </Layout>
   )
 }
