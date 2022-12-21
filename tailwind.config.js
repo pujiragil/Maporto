@@ -24,6 +24,10 @@ module.exports = {
         "orange": {
           "dark": "#FFE071",
           "light": "#FBD144"
+        },
+        "switch": {
+          "dark": "#171F26",
+          "light": "#FFFFFF"
         }
       }
     },
