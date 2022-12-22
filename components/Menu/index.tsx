@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Menu() {
   return (
@@ -16,7 +16,7 @@ function MenuSwitch() {
   };
 
   return (
-    <div className="w-full flex items-center justify-center p-2 gap-3.5 bg-switch-light dark:bg-switch-dark rounded-xl text-xs font-medium">
+    <div className="w-full md:w-8/12 lg:w-6/12 flex items-center justify-center p-2 gap-3.5 md:gap-7 bg-switch-light dark:bg-switch-dark rounded-xl text-xs md:text-sm lg:text-base">
       <button
         onClick={handleActive}
         name="portfolio"
