@@ -13,3 +13,8 @@
 .icons{
   @apply text-primary-two dark:text-secondary-two hover:text-primary-one hover:dark:text-secondary-one cursor-pointer
 }
+
+[data-theme='dark'] [data-hide-on-theme='dark'],
+[data-theme='light'] [data-hide-on-theme='light'] {
+  display: none;
+}
