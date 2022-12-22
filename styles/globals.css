@@ -26,6 +26,14 @@
   @apply w-full max-w-[200px] md:max-w-none bg-switch-light dark:bg-switch-dark text-primary-three dark:text-secondary-two rounded-xl p-3.5 md:p-5
 }
 
+.active-menu-button {
+  @apply bg-switch-semilight dark:bg-dark text-primary-four dark:text-secondary-two
+}
+
+.menu-button {
+  @apply rounded-xl p-3.5 flex-1 transition-all duration-300 ease-in-out dark:text-secondary-two
+}
+
 [data-theme='dark'] [data-hide-on-theme='dark'],
 [data-theme='light'] [data-hide-on-theme='light'] {
   display: none;

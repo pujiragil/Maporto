@@ -22,9 +22,9 @@ function MenuSwitch() {
         name="portfolio"
         className={`${
           active === "portfolio"
-            ? "bg-switch-semilight dark:bg-dark text-primary-four dark:text-secondary-two"
+            ? "active-menu-button"
             : "text-primary-three"
-        } rounded-xl p-3.5 flex-1 transition-all duration-300 ease-in-out`}
+        } menu-button`}
       >
         Portfolio
       </button>
@@ -33,9 +33,9 @@ function MenuSwitch() {
         name="skills"
         className={`${
           active === "skills"
-            ? "bg-switch-semilight dark:bg-dark text-primary-four dark:text-secondary-two"
+            ? "active-menu-button"
             : "text-primary-three"
-        } rounded-xl p-3.5 flex-1 transition-all duration-300 ease-in-out`}
+        } menu-button`}
       >
         Skills
       </button>
