@@ -27,7 +27,8 @@ module.exports = {
         },
         "switch": {
           "dark": "#171F26",
-          "light": "#FFFFFF"
+          "light": "#FFFFFF",
+          "semilight": "#D7D7D7"
         }
       },
       fontSize: {
