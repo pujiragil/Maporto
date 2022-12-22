@@ -7,9 +7,9 @@ import MainButton from "../Button";
 
 export default function Profile() {
   return (
-    <div className="flex flex-col gap-8 md:gap-12 xl:gap-16 items-center justify-center">
+    <div className="flex flex-col gap-8 md:gap-9 items-center justify-center">
       <Switch />
-      <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
+      <div className="flex flex-col md:flex-row md:w-7/12 gap-10 items-center justify-center">
         <Avatar />
         <Information />
       </div>
@@ -23,10 +23,10 @@ const Information = () => {
   return (
     <div className="flex flex-col gap-5">
       <div className="text-center md:text-left">
-        <h1 className="text-primary-one dark:text-secondary-one text-head mb-4">
+        <h1 className="text-primary-one dark:text-secondary-one text-2xl lg:text-3xl mb-4">
           Puji Ragil Setyo G
         </h1>
-        <p className="text-primary-two dark:text-secondary-two text-sm md:text-xl">
+        <p className="text-primary-two dark:text-secondary-two text-sm md:text-base">
           Frontend Engineer
         </p>
       </div>
@@ -56,18 +56,18 @@ const Social = () => {
 
 const Experience = () => {
   return (
-    <div className="p-5 flex justify-center gap-3 md:gap-14 text-primary-two dark:text-secondary-two">
-      <div className="flex flex-1 flex-col text-center max-w-[105px] md:max-w-[125px]">
-        <p className="md:text-2xl">1+</p>
-        <p className="text-sm md:text-xl">Years of experience</p>
+    <div className="py-2 md:py-2.5 flex justify-center gap-3 w-full md:gap-8 text-primary-two dark:text-secondary-two">
+      <div className="flex flex-1 flex-col text-center max-w-[105px] md:max-w-[125px] lg:max-w-[130px]">
+        <p className="md:text-lg">1+</p>
+        <p className="experiences">Years of experience</p>
       </div>
-      <div className="flex flex-1 flex-col text-center max-w-[105px] md:max-w-[125px]">
-        <p className="md:text-2xl">8+</p>
-        <p className="text-sm md:text-xl">Personal side project</p>
+      <div className="flex flex-1 flex-col text-center max-w-[105px] md:max-w-[125px] lg:max-w-[130px]">
+        <p className="md:text-lg">8+</p>
+        <p className="experiences">Personal side project</p>
       </div>
-      <div className="flex flex-1 flex-col text-center max-w-[105px] md:max-w-[125px]">
-        <p className="md:text-2xl">0</p>
-        <p className="text-sm md:text-xl">Client side project</p>
+      <div className="flex flex-1 flex-col text-center max-w-[105px] md:max-w-[125px] lg:max-w-[130px]">
+        <p className="md:text-lg">0</p>
+        <p className="experiences">Client side project</p>
       </div>
     </div>
   )
