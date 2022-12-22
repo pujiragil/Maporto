@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 
 const poppins = Poppins({
-  weight: "500",
+  weight: ["500", "600"],
   subsets: ["latin"],
 });
 

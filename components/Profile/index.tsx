@@ -3,6 +3,7 @@ import Switch from "../Switch";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import Link from "next/link";
+import About from "../About";
 
 export default function Profile() {
   return (
@@ -12,6 +13,7 @@ export default function Profile() {
         <Avatar />
         <Information />
       </div>
+      <About />
     </div>
   );
 }

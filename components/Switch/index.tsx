@@ -21,7 +21,7 @@ export default function Switch() {
   return (
     <button
       onClick={handleTheme}
-      className="outline-none border-none p-3 rounded-full cursor-pointer bg-switch-light dark:bg-switch-dark hover:bg-secondary-two hover:dark:bg-primary-two"
+      className="outline-none border-none p-3 rounded-full cursor-pointer bg-switch-light dark:bg-switch-dark hover:bg-secondary-two hover:dark:bg-primary-two transition duration-300 ease-in-out"
     >
       <ThemedImage/>
     </button>
