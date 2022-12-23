@@ -3,7 +3,7 @@ import Portfolio from "../Portfolio";
 
 export default function Menu() {
   return (
-    <div className="py-2.5 flex flex-col items-center justify-center gap-8">
+    <div className="py-2.5 flex flex-col items-center justify-center gap-8 mb-8 md:mb-16 lg:mb-24">
       <MenuSwitch />
       <Portfolio />
     </div>
