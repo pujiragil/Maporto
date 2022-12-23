@@ -46,5 +46,5 @@ function ThemedImage() {
       break
   }
 
-  return <Image className="md:w-6 md:h-6" src={src} alt="icon" />
+  return <Image className="h-5 w-5 md:w-6 md:h-6" src={src} alt="icon" />
 }

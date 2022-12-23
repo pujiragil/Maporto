@@ -1,5 +1,6 @@
-import { DOMElement, ElementRef, MouseEventHandler, useState } from "react";
+import { MouseEventHandler, useState } from "react";
 import Portfolio from "../Portfolio";
+import Skills from "../Skills";
 
 export default function Menu() {
   const [active, setActive] = useState("portfolio");
@@ -9,16 +10,16 @@ export default function Menu() {
   };
 
   return (
-    <div className="py-2.5 flex flex-col items-center justify-center gap-8 mb-8 md:mb-16 lg:mb-24">
+    <div className="py-2.5 flex flex-col items-center justify-center gap-8 mb-8 md:mb-16 lg:mb-24 transition-all duration-300 ease-in-out">
       <MenuSwitch active={active} handleActive={handleActive} />
-      <Portfolio />
+      {active === "portfolio" ? <Portfolio key={"portfolio"} /> : <Skills />}
     </div>
   );
 }
 
 interface MenuSwitchProps {
   active: string;
-  handleActive: MouseEventHandler
+  handleActive: MouseEventHandler;
 }
 
 function MenuSwitch({ active, handleActive }: MenuSwitchProps) {
@@ -28,9 +29,7 @@ function MenuSwitch({ active, handleActive }: MenuSwitchProps) {
         onClick={handleActive}
         name="portfolio"
         className={`${
-          active === "portfolio"
-            ? "active-menu-button"
-            : "text-primary-three"
+          active === "portfolio" ? "active-menu-button" : "text-primary-three"
         } menu-button`}
       >
         Portfolio
@@ -39,9 +38,7 @@ function MenuSwitch({ active, handleActive }: MenuSwitchProps) {
         onClick={handleActive}
         name="skills"
         className={`${
-          active === "skills"
-            ? "active-menu-button"
-            : "text-primary-three"
+          active === "skills" ? "active-menu-button" : "text-primary-three"
         } menu-button`}
       >
         Skills
