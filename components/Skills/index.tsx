@@ -26,8 +26,8 @@ function SkillItem({ src, alt }: SkillItemProps) {
         src={src}
         alt={alt}
       />
-      <div className="absolute w-full h-full inset-0 bg-orange-light dark:bg-orange-dark translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-
+      <div className="absolute w-full h-full inset-0 flex flex-col text-center justify-center bg-orange-light dark:bg-orange-dark translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+        <h2 className="text-2xl">React JS</h2>
       </div>
     </div>
   );
