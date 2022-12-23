@@ -9,7 +9,7 @@ export default function Profile() {
   return (
     <div className="flex flex-col gap-8 md:gap-9 items-center justify-center mb-8">
       <Switch />
-      <div className="flex flex-col md:flex-row md:w-8/12 lg:w-6/12 gap-10 items-center justify-center">
+      <div className="flex flex-col md:flex-row md:w-8/12 lg:w-5/12 gap-10 items-center justify-center lg:justify-between">
         <Avatar />
         <Information />
       </div>
