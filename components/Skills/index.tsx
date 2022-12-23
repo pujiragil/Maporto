@@ -16,18 +16,19 @@ export default function Skills() {
 interface SkillItemProps {
   src: string;
   alt: string;
-  isDark?: boolean;
-  darkSrc?: string;
 }
 
-function SkillItem({ src, alt, isDark, darkSrc }: SkillItemProps) {
+function SkillItem({ src, alt }: SkillItemProps) {
   return (
-    <div className="w-full h-52 rounded-2xl bg-switch-light dark:bg-switch-dark flex justify-center items-center">
-      {isDark ? (
-        <img className="w-16 h-16 md:w-20 md:h-20 object-cover" src={darkSrc} alt={alt} />
-      ) : (
-        <img className="w-16 h-16 md:w-20 md:h-20 object-cover" src={src} alt={alt} />
-      )}
+    <div className="w-full group h-52 overflow-hidden relative cursor-pointer rounded-2xl bg-switch-light dark:bg-switch-dark flex justify-center items-center">
+      <img
+        className="w-16 h-16 md:w-20 md:h-20 object-cover"
+        src={src}
+        alt={alt}
+      />
+      <div className="absolute w-full h-full inset-0 bg-orange-light dark:bg-orange-dark translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+
+      </div>
     </div>
   );
 }
