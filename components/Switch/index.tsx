@@ -1,6 +1,8 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import light from "/public/light.svg"
+import dark from "/public/dark.svg"
 
 export default function Switch() {
   const [mounted, setMounted] = useState(false)
@@ -34,15 +36,15 @@ function ThemedImage() {
 
   switch (resolvedTheme) {
     case 'light':
-      src = '/light.svg'
+      src = light
       break
     case 'dark':
-      src = '/dark.svg'
+      src = dark
       break
     default:
-      src = '/dark.svg'
+      src = dark
       break
   }
 
-  return <Image className="md:w-6 md:h-6" src={src} width={20} height={20} alt="icon" />
+  return <Image className="md:w-6 md:h-6" src={src} alt="icon" />
 }
