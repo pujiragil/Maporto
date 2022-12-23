@@ -21,7 +21,7 @@ export default function Switch() {
   return (
     <button
       onClick={handleTheme}
-      className="outline-none border-none p-3 rounded-full cursor-pointer bg-switch-light dark:bg-switch-dark hover:bg-secondary-two hover:dark:bg-primary-two transition duration-300 ease-in-out"
+      className="outline-none md:mb-8 border-none p-3 md:p-4 rounded-full cursor-pointer bg-switch-light dark:bg-switch-dark hover:bg-secondary-two hover:dark:bg-primary-two transition duration-300 ease-in-out"
     >
       <ThemedImage/>
     </button>
@@ -44,5 +44,5 @@ function ThemedImage() {
       break
   }
 
-  return <Image src={src} width={20} height={20} alt="icon" />
+  return <Image className="md:w-6 md:h-6" src={src} width={20} height={20} alt="icon" />
 }
