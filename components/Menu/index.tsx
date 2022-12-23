@@ -18,7 +18,7 @@ function MenuSwitch() {
   };
 
   return (
-    <div className="w-full md:w-9/12 lg:w-7/12 flex items-center justify-center p-2 gap-3.5 md:gap-7 bg-switch-light dark:bg-switch-dark rounded-xl text-xs md:text-sm lg:text-base">
+    <div className="max-w-[464px] w-full md:max-w-none md:w-11/12 lg:w-8/12 flex items-center justify-center p-2 gap-3.5 md:gap-7 bg-switch-light dark:bg-switch-dark rounded-xl text-xs md:text-sm lg:text-base">
       <button
         onClick={handleActive}
         name="portfolio"
